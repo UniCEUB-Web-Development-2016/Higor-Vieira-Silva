@@ -1,0 +1,60 @@
+<?php
+
+
+class TbUsuario{
+
+
+	var $nme_usuario;
+	var $senha_usuario;
+	var $dta_nasc_usuario;
+	var $sexo_usuario;
+	var $cod_perfil;
+
+	public function__construct($nme_usuario, $senha_usuario, $dta_nasc_usuario, $sexo_usuario, cod_perfil){
+
+	}
+
+    	public function getNmeUsuario(){
+    		return $this->nme_usuario;
+
+    }
+
+    	public function setNmeUsuario($nme_usuario){
+    		$this->nme_usuario = $nme_usuario;
+    }
+
+    	public function getSenhaUsuario(){
+             return $this->senha_usuario;
+
+    }
+
+        public function setSenhaUsuario($senha_usuario){
+             $this->senha_usuario = $senha_usuario;
+    }
+
+        public function getDtaNascUsuario(){
+            		return $this->dta_nasc_usuario;
+
+    }
+
+         public function setDtaNascUsuario($dta_nasc_usuario){
+        		$this->dta_nasc_usuario = $dta_nasc_usuario;
+
+    }
+
+         public function getSexoUsuario(){
+               return $this->sexo_usuario;
+
+        }
+
+           public function setSexoUsuario($sexo_usuario){
+            		$this->sexo_usuario = $sexo_usuario;
+    }
+
+    public function getCodPerfil(){
+                   return $this->cod_perfil;
+
+            }
+
+               public function setCodPerfil($cod_perfil){
+                		$this->cod_perfil = $cod_perfil;
