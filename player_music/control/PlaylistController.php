@@ -7,9 +7,9 @@
  */
 
 include_once "model/Request.php";
-include_once "model/tb_playlist.php";
+include_once "model/ta_playlist.php";
 include_once "database/DatabaseConnector.php";
-class UserController
+class PlaylistController
 {
     public function register($request)
     {
@@ -42,7 +42,7 @@ class UserController
         $db = new DatabaseConnector("localhost", "bd_player_music", "mysql", "", "root", "");
 
         $conn = $db->getConnection();
-        $result = $conn->query("SELECT cod_usuario, cod_musica FROM tb_playlist WHERE " . $crit);
+        $result = $conn->query("SELECT cod_usuario, cod_musica FROM ta_playlist WHERE " . $crit);
         //foreach($result as $row)
         return $result->fetchAll(PDO::FETCH_ASSOC);
     }
